@@ -10,7 +10,8 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -41,9 +42,14 @@ h1 {
 }
 
 .nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	color: #000;
 	background-color: #fff;
 	letter-spacing: 1px;
@@ -69,8 +75,12 @@ h1 {
 
 .nav ul {
 	list-style-type: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .nav ul li {
@@ -93,15 +103,18 @@ h1 {
 	background-color: #000;
 	visibility: hidden;
 	-webkit-transform: scaleX(0);
-	transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	    transform: scaleX(0);
 	-webkit-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
 	transition: all 0.3s ease-in-out 0s;
 }
 
 .nav ul li a:hover:before {
 	visibility: visible;
 	-webkit-transform: scaleX(1);
-	transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	    transform: scaleX(1);
 }
 
 .nav ul li a:active {
@@ -110,10 +123,19 @@ h1 {
 
 .head-content {
 	color: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	height: 90vh;
 }
 
@@ -133,6 +155,8 @@ button {
 	font-size: 25px;
 	border-radius: 30px;
 	text-transform: uppercase;
+	-webkit-transition: background-color .5s;
+	-o-transition: background-color .5s;
 	transition: background-color .5s;
 }
 
@@ -143,6 +167,8 @@ input[type="text"]:focus {
 }
 
 button:hover {
+	-webkit-transition: 1s;
+	-o-transition: 1s;
 	transition: 1s;
 	background-color: rgba(255, 255, 255);
 	cursor: pointer;
@@ -163,6 +189,8 @@ button:hover {
 }
 
 .about-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -181,12 +209,21 @@ button:hover {
 /* DELIVERY */
 
 .delivery {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	text-align: center;
 	width: 100%;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding: 50px 0;
 	background-color: #222;
 	color: #fff;
@@ -232,6 +269,8 @@ button:hover {
 }
 
 .menu-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -248,10 +287,19 @@ button:hover {
 .follow {
 	background-color: #222;
 	color: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 50px 0;
 }
 
@@ -263,6 +311,8 @@ button:hover {
 }
 
 .follow-icons ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -276,19 +326,35 @@ button:hover {
 }
 
 .contact {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	text-align: center;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	width: 100%;
 	margin: 50px 0;
 }
 
 .contact-form {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .contact-form h1 {
@@ -323,9 +389,14 @@ textarea,
 /* FOOTER */
 
 footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 20px 0;
 	background-color: #222;
 	color: #fff;
@@ -345,6 +416,8 @@ ul li {
 }
 
 .icons {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -389,15 +462,20 @@ ul li {
 
 @media only screen and (max-width: 700px) {
 	.nav ul {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		position: absolute;
 		top: 100%;
 		background-color: #fff;
 		width: 100%;
 		height: 100vh;
-		justify-content: space-around;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 		display: none;
-		animation: slide .5s;
+		-webkit-animation: slide .5s;
+		        animation: slide .5s;
 	}
 
 	.nav i {
@@ -409,17 +487,27 @@ ul li {
 	}
 
 	.about-container {
-		flex-direction: column-reverse
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		    -ms-flex-direction: column-reverse;
+		        flex-direction: column-reverse
 	}
 
 	.menu-container {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 
 	.about-container,
 	.menu-container {
-		justify-content: center;
-		align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 
 	.about h1,
@@ -478,6 +566,16 @@ ul li {
 
 	button {
 		font-size: 20px;
+	}
+}
+
+@-webkit-keyframes slide {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
 	}
 }
 
